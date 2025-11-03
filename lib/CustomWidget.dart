@@ -60,7 +60,7 @@ class DetailPage extends StatelessWidget {
       
         child: ListTile(
           shape: Border.all(color: Colors.black),
-          leading: Icon(Icons.camera),
+          leading: Icon(icon),
           title: Text("$name"),
           subtitle: Text("$price"),
           trailing: Text("$Raiting"),
