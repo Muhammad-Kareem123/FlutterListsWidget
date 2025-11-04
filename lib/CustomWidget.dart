@@ -58,14 +58,20 @@ class DetailPage extends StatelessWidget {
       appBar: AppBar(title: Text("Product Details")),
       body: Center(
       
-        child: ListTile(
-          shape: Border.all(color: Colors.black),
+        child: 
+        Card(
+          elevation: 4,
+          shape: Border.all(color: Colors.black,style: BorderStyle.solid),
+          child: ListTile(
+          
+          shape:BeveledRectangleBorder(borderRadius: BorderRadiusGeometry.circular(30)),
           leading: Icon(icon),
           title: Text("$name"),
           subtitle: Text("$price"),
           trailing: Text("$Raiting"),
     
-        )
+        )),
+        
       ),
     );
   }
